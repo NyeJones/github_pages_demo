@@ -267,8 +267,8 @@ h1 {
 
     /* Image container adjustments */
     .image-container {
-        flex-direction: column;   /* stack vertically (safe default) */
-        gap: 0;                   /* no gap since image is hidden */
+        flex-direction: column;   
+        gap: 0;                   
     }
 
     /* Hide image on small screens */
@@ -325,6 +325,16 @@ h1 {
     margin-bottom: 0;
     font-size: 0.95rem;
     color: #555;
+}
+
+.investigator-info a {
+    margin-bottom: 0;
+    font-size: 0.95rem;
+    color: #6B0000;
+}
+
+.investigator-info a:hover {
+    color: #C08000;           
 }
 
 .contributor-name {
