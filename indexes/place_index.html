@@ -7,16 +7,17 @@
    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65' crossorigin='anonymous'>
 </head>
 <body>
+<div class='sticky-top bg-white border-bottom'>
 <div class='index-header d-flex justify-content-between align-items-center'>
   <h1>Place Index</h1>
-  <form class='d-flex mt-3 mt-md-0 index-search-form'>
+  <form id='index-search-form' class='d-flex mt-3 mt-md-0 index-search-form'>
     <div class='input-group input-group-sm search-group'>
-      <input type='text' id='index-search' class='form-control' placeholder='Filter by name...' autocomplete='off'>
-      <button type='button' class='btn btn-outline-secondary clear-button' id='index-search-clear'>Clear</button>
+      <input type='text' id='index-search' class='form-control' placeholder='Search by name...' autocomplete='off'>
+      <button type='submit' class='btn btn-primary search-button'>Search</button>
     </div>
   </form>
 </div>
-  <div class='alphabet mb-4 d-flex flex-wrap gap-2' id='alphabet-nav'>
+  <div class='alphabet mb-3 d-flex flex-wrap gap-2' id='alphabet-nav'>
     <button class='btn btn-sm btn-outline-secondary alphabet-btn' data-letter='A'>A</button>
     <button class='btn btn-sm btn-outline-secondary alphabet-btn' data-letter='B'>B</button>
     <button class='btn btn-sm btn-outline-secondary alphabet-btn' data-letter='C'>C</button>
@@ -45,61 +46,64 @@
     <button class='btn btn-sm btn-outline-secondary alphabet-btn' data-letter='Z'>Z</button>
    <button type='button' class='btn btn-sm btn-outline-primary show-all alphabet-btn' data-letter='all'>Show All</button>
   </div>
+</div>
   <main>
-   <div class='letter-group mb-4' id='letter-A'>
-     <h4 class='letter-heading'>A</h4>
-      <ul class='index-list list-unstyled'>
-      </ul>
-    </div>
-   <div class='letter-group mb-4' id='letter-B'>
-     <h4 class='letter-heading'>B</h4>
-      <ul class='index-list list-unstyled'>
-      </ul>
-    </div>
-   <div class='letter-group mb-4' id='letter-C'>
-     <h4 class='letter-heading'>C</h4>
-      <ul class='index-list list-unstyled'>
-      </ul>
-    </div>
-   <div class='letter-group mb-4' id='letter-D'>
-     <h4 class='letter-heading'>D</h4>
-      <ul class='index-list list-unstyled'>
-      </ul>
-    </div>
-   <div class='letter-group mb-4' id='letter-E'>
-     <h4 class='letter-heading'>E</h4>
-      <ul class='index-list list-unstyled'>
-      </ul>
-    </div>
-   <div class='letter-group mb-4' id='letter-F'>
-     <h4 class='letter-heading'>F</h4>
-      <ul class='index-list list-unstyled'>
-      </ul>
-    </div>
-   <div class='letter-group mb-4' id='letter-G'>
-     <h4 class='letter-heading'>G</h4>
-      <ul class='index-list list-unstyled'>
-      </ul>
-    </div>
-   <div class='letter-group mb-4' id='letter-H'>
-     <h4 class='letter-heading'>H</h4>
-      <ul class='index-list list-unstyled'>
-      </ul>
-    </div>
-   <div class='letter-group mb-4' id='letter-I'>
-     <h4 class='letter-heading'>I</h4>
-      <ul class='index-list list-unstyled'>
-      </ul>
-    </div>
-   <div class='letter-group mb-4' id='letter-J'>
-     <h4 class='letter-heading'>J</h4>
-      <ul class='index-list list-unstyled'>
-      </ul>
-    </div>
-   <div class='letter-group mb-4' id='letter-K'>
-     <h4 class='letter-heading'>K</h4>
-      <ul class='index-list list-unstyled'>
-<li><div class='index-entry' id='l_3'>
+<ul class='index-list list-unstyled' id='all-entries'>
+<li class='letter-entry' data-letter='A'><div class='index-entry' id='l_13'>
+<div class='entry-header'>
+<span class='entry-title'>Adaiyapulam</span>
+<span class='entry-id'>(l_13)</span>
+  <button class='toggle' aria-label='Show details'>▸</button>
+</div>
+<div class='item-details'>
+<div class='entry-block entry-coords'>
+<span class='subheading'>Coordinates</span>
+<span class='item-name'>12.712667420077201, 79.26913609253174</span>
+</div>
+<div class='entry-block entry-place-pers'>
+<span class='subheading'>Affiliated Persons</span>
+<a href='person_index.html#p_2' target='_blank' class='item-name'  data-role='born'>Appayya Dīkṣita (p_2)  (connection: born)</a>
+</div></li>
+<li class='letter-entry' data-letter='B'><div class='index-entry' id='l_11'>
+<div class='entry-header'>
+<span class='entry-title'>Bhāskararāyapuram</span>
+<span class='entry-id'>(l_11)</span>
+  <button class='toggle' aria-label='Show details'>▸</button>
+</div>
+<div class='item-details'>
+<div class='entry-block entry-coords'>
+<span class='subheading'>Coordinates</span>
+<span class='item-name'>11.051495737900858, 79.52293853793262</span>
+</div>
+<div class='entry-block entry-place-types'>
+<span class='subheading'>Place Types</span>
+<div class="item-name">village</div>
+</div>
+<div class='entry-block entry-place-pers'>
+<span class='subheading'>Affiliated Persons</span>
+<a href='person_index.html#p_8' target='_blank' class='item-name'  data-role='resided'>Bhāskararāya (p_8)  (connection: resided)</a>
+</div></li>
+<li class='letter-entry' data-letter='K'><div class='index-entry' id='l_4'>
+<div class='entry-header'>
+<span class='entry-title'>Kandaramanikkam</span>
+<span class='entry-id'>(l_4)</span>
+  <button class='toggle' aria-label='Show details'>▸</button>
+</div>
+<div class='item-details'>
+<div class='entry-block entry-coords'>
+<span class='subheading'>Coordinates</span>
+<span class='item-name'>10.050606332879692, 78.63108147291018</span>
+</div>
+<div class='entry-block entry-place-types'>
+<span class='subheading'>Place Types</span>
+<div class="item-name">village</div>
+</div>
+<div class='entry-block entry-place-pers'>
+<span class='subheading'>Affiliated Persons</span>
+<a href='person_index.html#p_3' target='_blank' class='item-name'>Cokkanāthamakhin (p_3)</a>
+<a href='person_index.html#p_4' target='_blank' class='item-name'  data-role='born'>Rāmabhadra Dīkṣita (p_4)  (connection: born)</a>
+</div></li>
+<li class='letter-entry' data-letter='K'><div class='index-entry' id='l_3'>
 <div class='entry-header'>
 <span class='entry-title'>Kumbakonam</span>
 <span class='entry-id'>(l_3)</span>
@@ -115,33 +119,7 @@
 <div class="item-name">city</div>
 </div>
 </div></li>
-<li><div class='index-entry' id='l_4'>
-<div class='entry-header'>
-<span class='entry-title'>Kandaramanikkam</span>
-<span class='entry-id'>(l_4)</span>
-  <button class='toggle' aria-label='Show details'>▸</button>
-</div>
-<div class='item-details'>
-<div class='entry-block entry-coords'>
-<span class='subheading'>Coordinates</span>
-<span class='item-name'>10.050606332879692, 78.63108147291018</span>
-</div>
-<div class='entry-block entry-place-types'>
-<span class='subheading'>Place Types</span>
-<div class="item-name">village</div>
-</div>
-</div></li>
-      </ul>
-    </div>
-   <div class='letter-group mb-4' id='letter-L'>
-     <h4 class='letter-heading'>L</h4>
-      <ul class='index-list list-unstyled'>
-      </ul>
-    </div>
-   <div class='letter-group mb-4' id='letter-M'>
-     <h4 class='letter-heading'>M</h4>
-      <ul class='index-list list-unstyled'>
-<li><div class='index-entry' id='l_10'>
+<li class='letter-entry' data-letter='M'><div class='index-entry' id='l_10'>
 <div class='entry-header'>
 <span class='entry-title'>Madurai</span>
 <span class='entry-id'>(l_10)</span>
@@ -161,23 +139,7 @@
 <div class="item-name">city</div>
 </div>
 </div></li>
-<li><div class='index-entry' id='l_5'>
-<div class='entry-header'>
-<span class='entry-title'>Mannargudi</span>
-<span class='entry-id'>(l_5)</span>
-  <button class='toggle' aria-label='Show details'>▸</button>
-</div>
-<div class='item-details'>
-<div class='entry-block entry-idno'>
-<span class='subheading'>Authority Identifier</span>
-<span class='item-name'>Q2673456 (Wikidata)</span>
-</div>
-<div class='entry-block entry-coords'>
-<span class='subheading'>Coordinates</span>
-<span class='item-name'>10.664907912399869, 79.44842292371418</span>
-</div>
-</div></li>
-<li><div class='index-entry' id='l_7'>
+<li class='letter-entry' data-letter='M'><div class='index-entry' id='l_7'>
 <div class='entry-header'>
 <span class='entry-title'>Mahalingeswarar Temple</span>
 <span class='entry-id'>(l_7)</span>
@@ -193,42 +155,147 @@
 <div class="item-name">temple</div>
 </div>
 </div></li>
-      </ul>
-    </div>
-   <div class='letter-group mb-4' id='letter-N'>
-     <h4 class='letter-heading'>N</h4>
-      <ul class='index-list list-unstyled'>
-      </ul>
-    </div>
-   <div class='letter-group mb-4' id='letter-O'>
-     <h4 class='letter-heading'>O</h4>
-      <ul class='index-list list-unstyled'>
-      </ul>
-    </div>
-   <div class='letter-group mb-4' id='letter-P'>
-     <h4 class='letter-heading'>P</h4>
-      <ul class='index-list list-unstyled'>
-      </ul>
-    </div>
-   <div class='letter-group mb-4' id='letter-Q'>
-     <h4 class='letter-heading'>Q</h4>
-      <ul class='index-list list-unstyled'>
-      </ul>
-    </div>
-   <div class='letter-group mb-4' id='letter-R'>
-     <h4 class='letter-heading'>R</h4>
-      <ul class='index-list list-unstyled'>
-      </ul>
-    </div>
-   <div class='letter-group mb-4' id='letter-S'>
-     <h4 class='letter-heading'>S</h4>
-      <ul class='index-list list-unstyled'>
-      </ul>
-    </div>
-   <div class='letter-group mb-4' id='letter-T'>
-     <h4 class='letter-heading'>T</h4>
-      <ul class='index-list list-unstyled'>
-<li><div class='index-entry' id='l_1'>
+<li class='letter-entry' data-letter='M'><div class='index-entry' id='l_5'>
+<div class='entry-header'>
+<span class='entry-title'>Mannargudi</span>
+<span class='entry-id'>(l_5)</span>
+  <button class='toggle' aria-label='Show details'>▸</button>
+</div>
+<div class='item-details'>
+<div class='entry-block entry-idno'>
+<span class='subheading'>Authority Identifier</span>
+<span class='item-name'>Q2673456 (Wikidata)</span>
+</div>
+<div class='entry-block entry-coords'>
+<span class='subheading'>Coordinates</span>
+<span class='item-name'>10.664907912399869, 79.44842292371418</span>
+</div>
+</div></li>
+<li class='letter-entry' data-letter='S'><div class='index-entry' id='l_14'>
+<div class='entry-header'>
+<span class='entry-title'>Sakkottai</span>
+<span class='entry-id'>(l_14)</span>
+  <button class='toggle' aria-label='Show details'>▸</button>
+</div>
+<div class='item-details'>
+<div class='entry-block entry-idno'>
+<span class='subheading'>Authority Identifier</span>
+<span class='item-name'>Q15274500 (Wikidata)</span>
+</div>
+<div class='entry-block entry-coords'>
+<span class='subheading'>Coordinates</span>
+<span class='item-name'>10.94314405069567, 79.39938459107618</span>
+</div>
+<div class='entry-block entry-place-types'>
+<span class='subheading'>Place Types</span>
+<div class="item-name">village</div>
+</div>
+<div class='entry-block entry-place-pers'>
+<span class='subheading'>Affiliated Persons</span>
+<a href='person_index.html#p_10' target='_blank' class='item-name'  data-role='resided'>Serfoji I (p_10)  (connection: resided)</a>
+</div></li>
+<li class='letter-entry' data-letter='S'><div class='index-entry' id='l_15'>
+<div class='entry-header'>
+<span class='entry-title'>Svamimalai</span>
+<span class='entry-id'>(l_15)</span>
+  <button class='toggle' aria-label='Show details'>▸</button>
+</div>
+<div class='item-details'>
+<div class='entry-block entry-alt-names'>
+<span class='subheading'>Alternative Place Names</span>
+<div class="item-name">Svamigiri</div>
+</div>
+<div class='entry-block entry-coords'>
+<span class='subheading'>Coordinates</span>
+<span class='item-name'>10.95989672343953, 79.33280683150029</span>
+</div>
+<div class='entry-block entry-place-types'>
+<span class='subheading'>Place Types</span>
+<div class="item-name">village</div>
+</div>
+<div class='entry-block entry-place-pers'>
+<span class='subheading'>Affiliated Persons</span>
+<a href='person_index.html#p_9' target='_blank' class='item-name'  data-role='resided'>Dhuṇḍirāja Vyāsa (p_9)  (connection: resided)</a>
+</div></li>
+<li class='letter-entry' data-letter='T'><div class='index-entry' id='l_2'>
+<div class='entry-header'>
+<span class='entry-title'>Thanjavur</span>
+<span class='entry-id'>(l_2)</span>
+  <button class='toggle' aria-label='Show details'>▸</button>
+</div>
+<div class='item-details'>
+<div class='entry-block entry-idno'>
+<span class='subheading'>Authority Identifier</span>
+<span class='item-name'>Q41496 (Wikidata)</span>
+</div>
+<div class='entry-block entry-coords'>
+<span class='subheading'>Coordinates</span>
+<span class='item-name'>10.792269867841028, 79.13659424312229</span>
+</div>
+<div class='entry-block entry-place-types'>
+<span class='subheading'>Place Types</span>
+<div class="item-name">city</div>
+</div>
+<div class='entry-block entry-place-pers'>
+<span class='subheading'>Affiliated Persons</span>
+<a href='person_index.html#p_6' target='_blank' class='item-name'  data-role='resided'>Śāhaji Bhonsle (p_6)  (connection: resided)</a>
+</div></li>
+<li class='letter-entry' data-letter='T'><div class='index-entry' id='l_8'>
+<div class='entry-header'>
+<span class='entry-title'>Thiruvaiyaru</span>
+<span class='entry-id'>(l_8)</span>
+  <button class='toggle' aria-label='Show details'>▸</button>
+</div>
+<div class='item-details'>
+<div class='entry-block entry-idno'>
+<span class='subheading'>Authority Identifier</span>
+<span class='item-name'>Q2229514 (Wikidata)</span>
+</div>
+<div class='entry-block entry-coords'>
+<span class='subheading'>Coordinates</span>
+<span class='item-name'>10.881034156000599, 79.10831543586647</span>
+</div>
+</div></li>
+<li class='letter-entry' data-letter='T'><div class='index-entry' id='l_12'>
+<div class='entry-header'>
+<span class='entry-title'>Thiruvalangadu</span>
+<span class='entry-id'>(l_12)</span>
+  <button class='toggle' aria-label='Show details'>▸</button>
+</div>
+<div class='item-details'>
+<div class='entry-block entry-idno'>
+<span class='subheading'>Authority Identifier</span>
+<span class='item-name'>Q2436407 (Wikidata)</span>
+</div>
+<div class='entry-block entry-coords'>
+<span class='subheading'>Coordinates</span>
+<span class='item-name'>13.138907265880771, 79.79010812202344</span>
+</div>
+<div class='entry-block entry-place-types'>
+<span class='subheading'>Place Types</span>
+<div class="item-name">village</div>
+</div>
+<div class='entry-block entry-place-pers'>
+<span class='subheading'>Affiliated Persons</span>
+<a href='person_index.html#p_7' target='_blank' class='item-name'  data-role='born'>Gaṅgadhāramakhin (p_7)  (connection: born)</a>
+</div></li>
+<li class='letter-entry' data-letter='T'><div class='index-entry' id='l_9'>
+<div class='entry-header'>
+<span class='entry-title'>Thiruvavaduthurai Adhinam</span>
+<span class='entry-id'>(l_9)</span>
+  <button class='toggle' aria-label='Show details'>▸</button>
+</div>
+<div class='item-details'>
+<div class='entry-block entry-coords'>
+<span class='subheading'>Coordinates</span>
+<span class='item-name'>11.041455651911388, 79.52066367565887</span>
+</div>
+<div class='entry-block entry-place-types'>
+<span class='subheading'>Place Types</span>
+<div class="item-name">matha</div>
+</div>
+</div></li>
+<li class='letter-entry' data-letter='T'><div class='index-entry' id='l_1'>
 <div class='entry-header'>
 <span class='entry-title'>Thiruvisanallur</span>
 <span class='entry-id'>(l_1)</span>
@@ -255,28 +322,12 @@
 <span class='subheading'>Place Types</span>
 <div class="item-name">village</div>
 </div>
+<div class='entry-block entry-place-pers'>
+<span class='subheading'>Affiliated Persons</span>
+<a href='person_index.html#p_1' target='_blank' class='item-name'  data-role='affiliation to this place'>Nīlakaṇṭha Dīkṣita (p_1)  (connection: affiliation to this place)</a>
+<a href='person_index.html#p_4' target='_blank' class='item-name'  data-role='resided'>Rāmabhadra Dīkṣita (p_4)  (connection: resided)</a>
 </div></li>
-<li><div class='index-entry' id='l_2'>
-<div class='entry-header'>
-<span class='entry-title'>Thanjavur</span>
-<span class='entry-id'>(l_2)</span>
-  <button class='toggle' aria-label='Show details'>▸</button>
-</div>
-<div class='item-details'>
-<div class='entry-block entry-idno'>
-<span class='subheading'>Authority Identifier</span>
-<span class='item-name'>Q41496 (Wikidata)</span>
-</div>
-<div class='entry-block entry-coords'>
-<span class='subheading'>Coordinates</span>
-<span class='item-name'>10.792269867841028, 79.13659424312229</span>
-</div>
-<div class='entry-block entry-place-types'>
-<span class='subheading'>Place Types</span>
-<div class="item-name">city</div>
-</div>
-</div></li>
-<li><div class='index-entry' id='l_6'>
+<li class='letter-entry' data-letter='T'><div class='index-entry' id='l_6'>
 <div class='entry-header'>
 <span class='entry-title'>Tiruvidaimarudur</span>
 <span class='entry-id'>(l_6)</span>
@@ -299,72 +350,13 @@
 <span class='subheading'>Place Types</span>
 <div class="item-name">village</div>
 </div>
+<div class='entry-block entry-place-pers'>
+<span class='subheading'>Affiliated Persons</span>
+<a href='person_index.html#p_8' target='_blank' class='item-name'  data-role='died'>Bhāskararāya (p_8)  (connection: died)</a>
 </div></li>
-<li><div class='index-entry' id='l_8'>
-<div class='entry-header'>
-<span class='entry-title'>Thiruvaiyaru</span>
-<span class='entry-id'>(l_8)</span>
-  <button class='toggle' aria-label='Show details'>▸</button>
-</div>
-<div class='item-details'>
-<div class='entry-block entry-idno'>
-<span class='subheading'>Authority Identifier</span>
-<span class='item-name'>Q2229514 (Wikidata)</span>
-</div>
-<div class='entry-block entry-coords'>
-<span class='subheading'>Coordinates</span>
-<span class='item-name'>10.881034156000599, 79.10831543586647</span>
-</div>
-</div></li>
-<li><div class='index-entry' id='l_9'>
-<div class='entry-header'>
-<span class='entry-title'>Thiruvavaduthurai Adhinam</span>
-<span class='entry-id'>(l_9)</span>
-  <button class='toggle' aria-label='Show details'>▸</button>
-</div>
-<div class='item-details'>
-<div class='entry-block entry-coords'>
-<span class='subheading'>Coordinates</span>
-<span class='item-name'>11.041455651911388, 79.52066367565887</span>
-</div>
-<div class='entry-block entry-place-types'>
-<span class='subheading'>Place Types</span>
-<div class="item-name">matha</div>
-</div>
-</div></li>
-      </ul>
-    </div>
-   <div class='letter-group mb-4' id='letter-U'>
-     <h4 class='letter-heading'>U</h4>
-      <ul class='index-list list-unstyled'>
-      </ul>
-    </div>
-   <div class='letter-group mb-4' id='letter-V'>
-     <h4 class='letter-heading'>V</h4>
-      <ul class='index-list list-unstyled'>
-      </ul>
-    </div>
-   <div class='letter-group mb-4' id='letter-W'>
-     <h4 class='letter-heading'>W</h4>
-      <ul class='index-list list-unstyled'>
-      </ul>
-    </div>
-   <div class='letter-group mb-4' id='letter-X'>
-     <h4 class='letter-heading'>X</h4>
-      <ul class='index-list list-unstyled'>
-      </ul>
-    </div>
-   <div class='letter-group mb-4' id='letter-Y'>
-     <h4 class='letter-heading'>Y</h4>
-      <ul class='index-list list-unstyled'>
-      </ul>
-    </div>
-   <div class='letter-group mb-4' id='letter-Z'>
-     <h4 class='letter-heading'>Z</h4>
-      <ul class='index-list list-unstyled'>
-      </ul>
-    </div>
+</ul>
   </main>
-  <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js' integrity='sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4' crossorigin='anonymous'></script>  <script src='../static/js/index.js'></script>
+  <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js' integrity='sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4' crossorigin='anonymous'></script>
+  <script src='../static/js/index.js'></script>
 </body>
 </html>

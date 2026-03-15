@@ -51,6 +51,10 @@ h1 {
     color: #FFD700; /* gold highlight */
 }
 
+.navbar-toggler {
+    background-color: rgba(26, 80, 184, 0.9) !important;
+}
+
 .lead {
     margin-bottom: 2rem; /* adds space below the lead text */
 }
@@ -186,7 +190,7 @@ h1 {
 /* INTRO SECTION OVERLAPPING HERO IMAGE */
 .intro-section {
     position: relative;
-    margin-top: -80px;           /* moves box upward to overlap hero */
+    margin-top: -60px;           /* moves box upward to overlap hero */
     z-index: 1;
     display: flex;
     justify-content: flex-start
@@ -449,9 +453,14 @@ h1 {
 }
 
 
-/* -----------------------------
+/* -----------------------------s
    Indexes Page
 ----------------------------- */
+
+.index-section {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
 
 .indexes-grid {
     max-width: 1200px;  /* stop expansion beyond this width */
@@ -540,6 +549,95 @@ h1 {
     font-size: 1.1rem;
     color: #3b3a36;
 }
+
+.search-section {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.search-btn {
+  color: rgba(128, 0, 0, 1) !important;
+  border: 1.5px solid rgba(128, 0, 0, 1) !important;
+  background: transparent;
+  padding: 0.3rem 0.7rem !important;
+  border-radius: 0.4rem !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.03em;
+  margin-left: 0.5rem !important;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.search-btn:hover {
+  background-color: #e9ecef !important; /* pale grey */
+  color: rgba(128, 0, 0, 0.9) !important; /* optional subtle hover effect */
+}
+
+.search-group-wrapper {
+    max-width: 600px;          
+    margin-right: auto;
+    padding: 0.5rem;
+    background-color: #ffffff; 
+    border-radius: 8px;      
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.search-group {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+
+
+/* -----------------------------
+   Results Page
+----------------------------- */
+
+.results-all {
+    padding: 0 !important;
+    margin-top: 2rem;
+}
+
+.search-result a {
+  color: rgba(107, 0, 0, 1);          /* dark blue link */
+  text-decoration: none !important;  
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.search-result a:hover {
+  color: #C08000 !important; 
+}
+
+.search-result a::after {
+  content: ' ↗';
+  font-size: 0.8em;
+  opacity: 0.8;
+}
+
+.search-result a:hover {
+  text-decoration: underline;
+}
+
+.result-title {
+  font-weight: 500;
+}
+
+.search-result .badge {
+  background-color: rgba(107, 0, 0, 1) !important;  /* dark blue badge */
+}
+
+.results-num {
+  color: #555;
+}
+
+.results-divider {
+    border: none;
+    height: 1px;
+    background-color: rgba(0,0,0,0.8);
+    margin: 0.5rem 0;
+}
+
 
 /* -----------------------------
    Readings Page
