@@ -572,6 +572,13 @@ h1 {
   color: rgba(128, 0, 0, 0.9) !important; /* optional subtle hover effect */
 }
 
+.search-input {
+    width: 800px;        
+    max-width: 100%;     
+    padding: 6px 10px;   
+    box-sizing: border-box; 
+}
+
 .search-group-wrapper {
     max-width: 600px;          
     margin-right: auto;
@@ -586,7 +593,6 @@ h1 {
     gap: 0.5rem;
     align-items: center;
 }
-
 
 
 /* -----------------------------
