@@ -35,6 +35,7 @@ document.addEventListener('DOMContentLoaded', async function() {
   const resultsContainer = document.getElementById('results-container');
   const resultsCount = document.getElementById('results-count');
   const categorySelect = document.getElementById('search-category');
+  const clearButton = document.getElementById('search-clear');
 
   if (!searchBox || !resultsContainer) return;
 
@@ -66,7 +67,7 @@ document.addEventListener('DOMContentLoaded', async function() {
     return;
   }
 
-  function performSearch(query, category = 'all') {
+  function performSearch(query, category = 'all', liveFilter = false) {
 
     const words = normalize(query).split(/\s+/).filter(Boolean);
 
@@ -83,14 +84,25 @@ document.addEventListener('DOMContentLoaded', async function() {
       const name = normalize(item.name);
       const id = normalize(item.id)
       const altNames = (item.alt_names || []).map(a => normalize(a));
-      const searchable = [name, id, ...altNames].join(" ");
+      const places = (item.places || []).map(p => normalize(p));
+      const searchable = [name, id, ...altNames, ...places].join(" ");
 
-      const matchesQuery = words.every(word => {
-        const regex = new RegExp(`\\b${word}\\b`, "i");
-        return regex.test(searchable);
-      });
+      let matchesQuery;
+      if (liveFilter) {
+        // match words only at the start of any word
+        matchesQuery = words.every(word => {
+          const regex = new RegExp(`\\b${word}`, "i"); // word boundary at start
+          return regex.test(searchable);
+        });
+      } else {
+        // whole-word match for data-search-box referrals
+        matchesQuery = words.every(word => {
+          const regex = new RegExp(`\\b${word}\\b`, "i");
+          return regex.test(searchable);
+        });
+      }
+      
       const matchesCategory = category === 'all' || item.type.toLowerCase() === category.toLowerCase();
-
       return matchesQuery && matchesCategory;
     });
 
@@ -113,9 +125,9 @@ document.addEventListener('DOMContentLoaded', async function() {
       el.className = 'search-result mb-3';
 
       const badgeClass = {
-        person: "bg-primary",
-        place: "bg-success",
-        work: "bg-warning text-dark"
+        person: "badge-person",
+        place: "badge-place",
+        work: "badge-work"
       }[item.type.toLowerCase()] || "bg-secondary";
 
       el.innerHTML = `
@@ -128,6 +140,11 @@ document.addEventListener('DOMContentLoaded', async function() {
         ${item.alt_names && item.alt_names.length ? `
           <div class="result-alt text-muted small">
             Alt names: ${item.alt_names.join(', ')}
+          </div>
+        ` : ''}
+        ${item.places && item.places.length ? `
+          <div class="result-places text-muted small">
+            Associated Places: ${item.places.join(', ')}
           </div>
         ` : ''}
         <div class="result-link mt-1">
@@ -144,21 +161,32 @@ document.addEventListener('DOMContentLoaded', async function() {
     });
   }
 
-  performSearch(initialQuery, initialCategory);
+  performSearch(initialQuery, initialCategory, false);
 
-  // Trigger search on Enter
-  searchBox.addEventListener('keypress', e => {
-    if (e.key === 'Enter') {
-      e.preventDefault();
-      performSearch(searchBox.value, categorySelect ? categorySelect.value : 'all');
-    }
+  searchBox.addEventListener('input', () => {
+    performSearch(
+      searchBox.value,
+      categorySelect ? categorySelect.value : 'all',
+      true
+    );
   });
 
-  // Trigger search on button click
-  const searchButton = document.getElementById('search-button');
-  if (searchButton) {
-    searchButton.addEventListener('click', () => {
-      performSearch(searchBox.value, categorySelect ? categorySelect.value : 'all');
+  if (categorySelect) {
+    categorySelect.addEventListener('change', () => {
+      performSearch(
+        searchBox.value,
+        categorySelect.value,
+        true
+      );
+    });
+  }
+
+  if (clearButton) {
+    clearButton.addEventListener('click', () => {
+      searchBox.value = '';                        
+      if (categorySelect) categorySelect.value = 'all'; 
+      searchBox.dispatchEvent(new Event('input')); 
+      searchBox.focus();                           
     });
   }
 });

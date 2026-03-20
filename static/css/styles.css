@@ -555,7 +555,7 @@ h1 {
     padding-bottom: 1rem;
 }
 
-.search-btn {
+.search-grp-btn {
   color: rgba(128, 0, 0, 1) !important;
   border: 1.5px solid rgba(128, 0, 0, 1) !important;
   background: transparent;
@@ -567,7 +567,7 @@ h1 {
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-.search-btn:hover {
+.search-grp-btn:hover {
   background-color: #e9ecef !important; /* pale grey */
   color: rgba(128, 0, 0, 0.9) !important; /* optional subtle hover effect */
 }
@@ -629,8 +629,16 @@ h1 {
   font-weight: 500;
 }
 
-.search-result .badge {
-  background-color: rgba(107, 0, 0, 1) !important;  /* dark blue badge */
+.badge-person {
+  background-color: #003f7f; 
+}
+
+.badge-place {
+  background-color: #00664d;
+}
+
+.badge-work {
+  background-color: #c55d12;
 }
 
 .results-num {
