@@ -4,35 +4,51 @@
     "id": "p_1",
     "name": "Nīlakaṇṭha Dīkṣita",
     "alt_names": [],
-    "url": "indexes/person_index.html#p_1"
+    "url": "indexes/person_index.html#p_1",
+    "places": [
+      "Thiruvisanallur"
+    ]
   },
   {
     "type": "person",
     "id": "p_10",
     "name": "Serfoji I",
     "alt_names": [],
-    "url": "indexes/person_index.html#p_10"
+    "url": "indexes/person_index.html#p_10",
+    "places": [
+      "Sakkottai"
+    ]
   },
   {
     "type": "person",
     "id": "p_2",
     "name": "Appayya Dīkṣita",
     "alt_names": [],
-    "url": "indexes/person_index.html#p_2"
+    "url": "indexes/person_index.html#p_2",
+    "places": [
+      "Adaiyapulam"
+    ]
   },
   {
     "type": "person",
     "id": "p_3",
     "name": "Cokkanāthamakhin",
     "alt_names": [],
-    "url": "indexes/person_index.html#p_3"
+    "url": "indexes/person_index.html#p_3",
+    "places": [
+      "Kandaramanikkam"
+    ]
   },
   {
     "type": "person",
     "id": "p_4",
     "name": "Rāmabhadra Dīkṣita",
     "alt_names": [],
-    "url": "indexes/person_index.html#p_4"
+    "url": "indexes/person_index.html#p_4",
+    "places": [
+      "Kandaramanikkam",
+      "Thiruvisanallur"
+    ]
   },
   {
     "type": "person",
@@ -41,14 +57,18 @@
     "alt_names": [
       "Tryambakayajvan"
     ],
-    "url": "indexes/person_index.html#p_5"
+    "url": "indexes/person_index.html#p_5",
+    "places": []
   },
   {
     "type": "person",
     "id": "p_6",
     "name": "Śāhaji Bhonsle",
     "alt_names": [],
-    "url": "indexes/person_index.html#p_6"
+    "url": "indexes/person_index.html#p_6",
+    "places": [
+      "Thanjavur"
+    ]
   },
   {
     "type": "person",
@@ -57,77 +77,95 @@
     "alt_names": [
       "Gaṅgādharavājapeyin"
     ],
-    "url": "indexes/person_index.html#p_7"
+    "url": "indexes/person_index.html#p_7",
+    "places": [
+      "Tiruvalangadu"
+    ]
   },
   {
     "type": "person",
     "id": "p_8",
     "name": "Bhāskararāya",
     "alt_names": [],
-    "url": "indexes/person_index.html#p_8"
+    "url": "indexes/person_index.html#p_8",
+    "places": [
+      "Bhāskararāyapuram",
+      "Tiruvidaimarudur"
+    ]
   },
   {
     "type": "person",
     "id": "p_9",
     "name": "Dhuṇḍirāja Vyāsa",
     "alt_names": [],
-    "url": "indexes/person_index.html#p_9"
+    "url": "indexes/person_index.html#p_9",
+    "places": [
+      "Svamimalai"
+    ]
   },
   {
     "type": "work",
     "id": "w_1",
     "name": "Nīlakaṇṭhavijayacampū",
     "alt_names": [],
-    "url": "indexes/work_index.html#w_1"
+    "url": "indexes/work_index.html#w_1",
+    "places": []
   },
   {
     "type": "work",
     "id": "w_11",
     "name": "Kuvalayānanda",
     "alt_names": [],
-    "url": "indexes/work_index.html#w_11"
+    "url": "indexes/work_index.html#w_11",
+    "places": []
   },
   {
     "type": "work",
     "id": "w_12",
     "name": "Rasikarañjanī",
     "alt_names": [],
-    "url": "indexes/work_index.html#w_12"
+    "url": "indexes/work_index.html#w_12",
+    "places": []
   },
   {
     "type": "work",
     "id": "w_13",
     "name": "Avaidikadarśanasaṃgraha",
     "alt_names": [],
-    "url": "indexes/work_index.html#w_13"
+    "url": "indexes/work_index.html#w_13",
+    "places": []
   },
   {
     "type": "work",
     "id": "w_14",
     "name": "Śabdakaumudī",
     "alt_names": [],
-    "url": "indexes/work_index.html#w_14"
+    "url": "indexes/work_index.html#w_14",
+    "places": []
   },
   {
     "type": "work",
     "id": "w_15",
     "name": "Śābdikarakṣā",
     "alt_names": [],
-    "url": "indexes/work_index.html#w_15"
+    "url": "indexes/work_index.html#w_15",
+    "places": []
   },
   {
     "type": "work",
     "id": "w_16",
     "name": "Mudrārākṣasavyākhyāna",
     "alt_names": [],
-    "url": "indexes/work_index.html#w_16"
+    "url": "indexes/work_index.html#w_16",
+    "places": []
   },
   {
     "type": "work",
     "id": "w_17",
     "name": "Śāhajivilāsagītā",
     "alt_names": [],
-    "url": "indexes/work_index.html#w_17"
+    "url": "indexes/work_index.html#w_17",
+    "places": []
   },
   {
     "type": "work",
@@ -136,14 +174,16 @@
     "alt_names": [
       "Rājakośanighaṇṭu"
     ],
-    "url": "indexes/work_index.html#w_18"
+    "url": "indexes/work_index.html#w_18",
+    "places": []
   },
   {
     "type": "work",
     "id": "w_2",
     "name": "Mahābhāṣyaratnāvali",
     "alt_names": [],
-    "url": "indexes/work_index.html#w_2"
+    "url": "indexes/work_index.html#w_2",
+    "places": []
   },
   {
     "type": "work",
@@ -152,28 +192,32 @@
     "alt_names": [
       "Dhāturūpāvalī"
     ],
-    "url": "indexes/work_index.html#w_3"
+    "url": "indexes/work_index.html#w_3",
+    "places": []
   },
   {
     "type": "work",
     "id": "w_5",
     "name": "Subhadrāpariṇaya",
     "alt_names": [],
-    "url": "indexes/work_index.html#w_5"
+    "url": "indexes/work_index.html#w_5",
+    "places": []
   },
   {
     "type": "work",
     "id": "w_6",
     "name": "Kaliviḍambana",
     "alt_names": [],
-    "url": "indexes/work_index.html#w_6"
+    "url": "indexes/work_index.html#w_6",
+    "places": []
   },
   {
     "type": "work",
     "id": "w_8",
     "name": "Dharmākūtam",
     "alt_names": [],
-    "url": "indexes/work_index.html#w_8"
+    "url": "indexes/work_index.html#w_8",
+    "places": []
   },
   {
     "type": "place",

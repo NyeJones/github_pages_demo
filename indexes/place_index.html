@@ -10,10 +10,10 @@
 <div class='sticky-top bg-white border-bottom'>
 <div class='index-header d-flex justify-content-between align-items-center'>
   <h1>Place Index</h1>
-  <form id='index-search-form' class='d-flex mt-3 mt-md-0 index-search-form'>
+  <form id='index-search-form' class='d-flex mt-3 mt-md-0 index-search-form' onsubmit='return false;'>
     <div class='input-group input-group-sm search-group'>
       <input type='text' id='index-search' class='search-input form-control' placeholder='Search by name, diacritics ignored..' autocomplete='off'>
-      <button type='submit' class='btn btn-primary search-button'>Search</button>
+      <button type='button' id='search-clear' class='btn btn-secondary search-button'>Clear</button>
     </div>
   </form>
 </div>
